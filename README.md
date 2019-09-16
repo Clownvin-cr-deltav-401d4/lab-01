@@ -5,7 +5,7 @@
 ### Author: Calvin Hall
 
 ### Links and Resources
-* [submission PR](http://xyz.com)
+* [submission PR](https://github.com/Clownvin-cr-deltav-401d4/lab-01/pull/4)
 * [travis](https://www.travis-ci.com/Clownvin-cr-deltav-401d4/lab-01)
 
 ### Modules
