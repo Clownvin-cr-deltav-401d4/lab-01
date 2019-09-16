@@ -43,7 +43,7 @@ describe('validator module performs basic validation of', () => {
   it('objects', () => {
     expect(validator.isObject(str)).toBeFalsy();
     expect(validator.isObject(num)).toBeFalsy();
-    expect(validator.isObject(arr)).toBeTruthy();
+    expect(validator.isObject(arr)).toBeFalsy();
     expect(validator.isObject(obj)).toBeTruthy();
     expect(validator.isObject(func)).toBeFalsy();
     expect(validator.isObject(bool)).toBeFalsy();
@@ -95,7 +95,6 @@ describe('validator module performs complex validations', () => {
     expect(validator.validateProperty('someBool', object, validator.isBoolean)).toBeTruthy();
     expect(validator.validateProperty('someFunction', object, validator.isFunction)).toBeTruthy();
     expect(validator.validateProperty('someArray', object, validator.isArray)).toBeTruthy();
-    expect(validator.validateProperty('someArray', object, validator.isObject)).toBeTruthy();
   });
 
   it('validates the types of values contained in an array', () => {
